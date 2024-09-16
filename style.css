@@ -1,0 +1,106 @@
+/* Existing styles */
+body {
+  display: flex;
+  flex-direction: column; /* Allow body to expand and have a footer at the bottom */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between the calculator and the footer */
+  max-width: 400px; /* Limit the width of the calculator */
+  width: 100%; /* Ensure it takes up the full width within max-width */
+}
+
+.display {
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: right;
+  border-radius: 6px;
+  min-height: 60px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 6px;
+}
+
+.btn:active {
+  background-color: #555;
+}
+
+.operator {
+  background-color: orange;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.clear,
+.neg,
+.percent,
+.operator,
+.dot {
+  background-color: #666;
+}
+
+.dec-only {
+  display: none;
+}
+
+.binary-mode .dec-only {
+  display: none;
+}
+
+.decimal-mode .dec-only {
+  display: inline-block;
+}
+
+/* Footer styles */
+footer {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content a {
+  color: #00f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}

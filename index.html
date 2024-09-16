@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="toggle">
+      <button class="btn toggle-mode" data-mode="binary">Binary Mode</button>
+      <button class="btn toggle-mode" data-mode="decimal">Decimal Mode</button>
+    </div>
+    <div class="display">0</div>
+    <div class="buttons">
+      <button class="btn clear">AC</button>
+      <button class="btn operator" data-op="+">+</button>
+      <button class="btn operator" data-op="-">-</button>
+      <button class="btn operator" data-op="*">*</button>
+      <button class="btn operator" data-op="/">/</button>
+      <button class="btn number">0</button>
+      <button class="btn number">1</button>
+      <!-- Decimal numbers -->
+      <button class="btn number dec-only">2</button>
+      <button class="btn number dec-only">3</button>
+      <button class="btn number dec-only">4</button>
+      <button class="btn number dec-only">5</button>
+      <button class="btn number dec-only">6</button>
+      <button class="btn number dec-only">7</button>
+      <button class="btn number dec-only">8</button>
+      <button class="btn number dec-only">9</button>
+      <button class="btn convert" data-conv="bin2dec">Bin -> Dec</button>
+      <button class="btn convert" data-conv="dec2bin">Dec -> Bin</button>
+      <button class="btn equals">=</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Mohammed Nassan Najjar</p>
+      <a href="https://mohammed-nassan-najjar.web.app/" target="_blank">Connect with me</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
